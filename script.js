@@ -321,17 +321,21 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Dark mode functionality
   const darkModeToggle = document.getElementById('dark-mode-toggle');
-  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const body = document.body;
   
-  // Check for saved theme preference or use system preference
-  if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDarkScheme.matches)) {
-    document.documentElement.classList.add('dark');
+  // Check for saved dark mode preference
+  if (localStorage.getItem('darkMode') === 'true') {
+    body.classList.add('dark');
+    darkModeToggle.innerHTML = '<i class="fas fa-sun text-xl"></i>';
   }
   
-  // Toggle dark mode
   darkModeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    body.classList.toggle('dark');
+    const isDarkMode = body.classList.contains('dark');
+    localStorage.setItem('darkMode', isDarkMode);
+    darkModeToggle.innerHTML = isDarkMode 
+      ? '<i class="fas fa-sun text-xl"></i>' 
+      : '<i class="fas fa-moon text-xl"></i>';
   });
   
   // Text animation observer
@@ -351,3 +355,35 @@ document.addEventListener('DOMContentLoaded', function() {
     textObserver.observe(element);
   });
 });
+
+// Email functionality
+function sendEmail(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+  
+  // Your email address
+  const recipientEmail = 'arkhismhamed@gmail.com';
+  
+  // Create the email body
+  const emailBody = `
+    Name: ${data.name}
+    Email: ${data.email}
+    Subject: ${data.subject}
+    Message: ${data.message}
+  `;
+  
+  // Create the mailto link
+  const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(emailBody)}`;
+  
+  // Open the default email client
+  window.location.href = mailtoLink;
+  
+  // Optional: Show success message
+  alert('Your email client will open with the message. Please send the email to contact me.');
+  
+  // Reset the form
+  form.reset();
+}
