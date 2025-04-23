@@ -527,13 +527,14 @@
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="md:col-span-2">
-            <form id="contact-form" class="space-y-6">
+            <form id="contact-form" class="space-y-6" onsubmit="sendEmail(event)">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div class="space-y-2">
                   <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                   <input 
                     id="name" 
                     type="text"
+                    name="name"
                     placeholder="Your name" 
                     class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
                     required
@@ -544,6 +545,7 @@
                   <input 
                     id="email" 
                     type="email" 
+                    name="email"
                     placeholder="Your email" 
                     class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
                     required
@@ -556,6 +558,7 @@
                 <input 
                   id="subject" 
                   type="text"
+                  name="subject"
                   placeholder="Subject of your message" 
                   class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
                   required
@@ -566,6 +569,7 @@
                 <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                 <textarea 
                   id="message" 
+                  name="message"
                   rows="5" 
                   placeholder="Your message" 
                   class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
@@ -650,12 +654,6 @@
       </div>
     </div>
   </section>
-<form action="https://formsubmit.co/arkhismhamed@gmail.com" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send</button>
-</form>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-12">
