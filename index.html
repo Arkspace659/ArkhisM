@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/design-a-unique-and-bold-logo-for-a-male_fJudMwEfRsiqagPYAlCQuQ_ymE1LvJyTwGbs-bKiPAD_g__1_-removebg-preview.png" type="image/png" sizes="256x256">
+    <title>Arkhis M'hammed Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+
+  <body
+    class="bg-gray-50 text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100"
+  >
+    <!-- Header -->
+    <header
+      class="bg-white shadow-sm fixed w-full z-10 scroll-up transition-colors duration-300 transform transition-all duration-300 ease-in-out hover:shadow-lg"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <a
+            href="#home"
+            class="text-xl font-bold animate-fade-in ml-4 md:ml-32"
+          >
+            <img
+              src="images/design-a-unique-and-bold-logo-for-a-male_fJudMwEfRsiqagPYAlCQuQ_ymE1LvJyTwGbs-bKiPAD_g__1_-removebg-preview.png"
+              alt="Arkhis Logo"
+              width="70"
+              height="40"
+              class="object-contain mix-blend-multiply dark:mix-blend-screen"
+            />
+          </a>
+          <nav class="hidden md:flex space-x-8 animate-fade-in-delay-200">
+            <a
+              href="#home"
+              class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition active hover:scale-105 transform transition-all duration-300"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition hover:scale-105 transform transition-all duration-300"
+              >About Me</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+              >Projects</a
+            >
+            <a
+              href="#experience"
+              class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+              >Internship Experience</a
+            >
+            <a
+              href="#education"
+              class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+              >Education</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+              >Skills</a
+            >
+            <a
+              href="#certificates"
+              class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+              >Certificates</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+              >Contact Me</a
+            >
+          </nav>
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-gray-700 dark:text-gray-300 animate-fade-in"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white dark:bg-gray-800 shadow-md transition-colors duration-300"
+      >
+        <div class="container mx-auto px-4 py-3 space-y-3">
+          <a
+            href="#home"
+            class="block text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+            >About Me</a
+          >
+          <a
+            href="#projects"
+            class="block text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+            >Projects</a
+          >
+          <a
+            href="#experience"
+            class="block text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+            >Internship Experience</a
+          >
+          <a
+            href="#education"
+            class="block text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+            >Education</a
+          >
+          <a
+            href="#skills"
+            class="block text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+            >Skills</a
+          >
+          <a
+            href="#certificates"
+            class="block text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+            >Certificates</a
+          >
+          <a
+            href="#contact"
+            class="block text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Dark Mode Toggle Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+      <button
+        id="dark-mode-toggle"
+        class="w-12 h-12 rounded-full bg-indigo-600 dark:bg-indigo-400 text-white shadow-lg hover:bg-indigo-700 dark:hover:bg-indigo-500 transition-all duration-300 flex items-center justify-center animate-fade-in"
+      >
+        <i class="fas fa-moon text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-gray-50 to-gray-100 hover:shadow-2xl transition-shadow duration-300"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight animate-fade-in"
+          >
+            <span class="text-indigo-600">Hello, I'm Arkhis M'hammed.</span>
+            <br />
+            Mechanical Engineering Student.
+          </h1>
+
+          <p
+            class="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl animate-fade-in-delay-200"
+          >
+            I'm a passionate mechanical engineering student with a strong
+            interest in robotics, automation, conception, materials, and
+            programming
+          </p>
+
+          <div class="mt-10 flex flex-wrap gap-4 animate-fade-in-delay-400">
+            <a
+              href="#contact"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-md transition flex items-center"
+            >
+              Get in touch
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <a
+              href="#projects"
+              class="border border-black-300 hover:border-indigo-500 text-gray-700 font-medium py-2 px-6 rounded-md transition flex items-center"
+            >
+              View my work
+              <i class="fas fa-chevron-down ml-2"></i>
+            </a>
+          </div>
+
+          <div class="mt-12 flex space-x-5 animate-fade-in-delay-600">
+            <a
+              href="https://github.com/Arkspace659"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-600 hover:text-indigo-600 transition"
+            >
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mhammed-arkhis/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-600 hover:text-indigo-600 transition"
+            >
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a
+              href="https://x.com/MhamedArkh25571"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-600 hover:text-indigo-600 transition"
+            >
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B212623454914&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-600 hover:text-indigo-600 transition"
+            >
+              <i class="fab fa-whatsapp text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider"></div>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="section-header text-3xl font-bold text-gray-900 mb-6 relative after:content-[''] after:block after:w-[60px] after:h-1 after:bg-indigo-600 after:mt-2 after:rounded-sm"
+          >
+            About Me
+          </h2>
+
+          <div class="flex flex-col md:flex-row gap-12 mt-10">
+            <div class="md:w-1/3">
+              <div class="relative rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="images/WhatsApp Image 2024-10-14 at 15.21.03.jpeg"
+                  alt="Arkhis M'hammed"
+                  class="w-full object-cover object-center"
+                />
+              </div>
+            </div>
+            <div class="md:w-2/3">
+              <p class="text-lg text-gray-700 mb-5">
+                Arkhis M'hammed, 23 years old, student at National School of
+                Applied Sciences Engineering cycle (ENSA-FES). As a student, I
+                have an exciting opportunity to develop my skills and shape my
+                professional future.
+              </p>
+              <p class="text-lg text-gray-700 mb-5">
+                I am passionate about mechanical engineering and industrial
+                processes, constantly exploring new technologies and
+                methodologies in manufacturing and design. My journey in
+                mechanical engineering started with basic CAD designs, and has
+                evolved to include advanced mechanical systems and industry best
+                practices. My strong mechanical background gives me a unique
+                perspective on problem-solving in industrial settings. I
+                particularly enjoy the challenge of designing and optimizing
+                mechanical systems, improving manufacturing processes, and
+                finding innovative solutions to complex engineering challenges
+                in industrial applications.
+              </p>
+
+              <div class="mt-8">
+                <a
+                  href="rapports/M'hammed_Arkhis_CV_Mechanical_Engineer_2025.pdf"
+                  target="_blank"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-md transition flex items-center inline-flex"
+                >
+                  <i class="fas fa-download mr-2"></i>
+                  Download Resume
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="section-header text-3xl font-bold text-gray-900 mb-6 relative after:content-[''] after:block after:w-[60px] after:h-1 after:bg-indigo-600 after:mt-2 after:rounded-sm"
+        >
+          Featured Projects
+        </h2>
+
+        <p class="text-lg text-gray-600 max-w-3xl mb-12">
+          Here's a selection of my most recent work, showcasing my expertise in
+          mechanical engineering, CAD design, and interactive experiences.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="transition-shadow duration-300 hover:shadow-lg transform hover:-translate-y-1 project-card"
+          >
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <div class="relative h-48 overflow-hidden project-image">
+                <img
+                  src="images/WhatsApp Image 2024-06-04 at 14.13.37.jpeg"
+                  alt="Réalisation d'un Tracker Solaire"
+                  class="w-full h-full object-cover transition-transform duration-300"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Solar Tracker Implementation
+                  </h3>
+                  <div class="flex space-x-2">
+                    <a
+                      href="Rapports/FINAL.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-500 hover:text-indigo-600 transition"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  A solar tracker maximizes energy capture by following the
+                  sun's movement through mechanical design, electronic control,
+                  and software integration.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span
+                    class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md"
+                    >Arduino</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md"
+                    >Protheus 8 pro</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md"
+                    >Catia V5</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="transition-shadow duration-300 hover:shadow-lg transform hover:-translate-y-1 project-card"
+          >
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <div class="relative h-48 overflow-hidden project-image">
+                <img
+                  src="images/moteur miniprojet.PNG"
+                  alt="Moteur Diesel 4 Temps"
+                  class="w-full h-full object-cover transition-transform duration-300"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Manufacting Diesel Motor
+                  </h3>
+                  <div class="flex space-x-2">
+                    <a
+                      href="https://example.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-500 hover:text-indigo-600 transition"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Designing a motor in Catia involves creating components,
+                  assembling them, simulating motion, ensuring structural
+                  functionality, and optimizing design parameters.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span
+                    class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md"
+                    >Simulation Workshop</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md"
+                  >
+                    Assembly</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md"
+                    >Catia V5</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="transition-shadow duration-300 hover:shadow-lg transform hover:-translate-y-1 project-card"
+          >
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+              <div class="relative h-48 overflow-hidden project-image">
+                <img
+                  src="images/86768&w=1460&h=808&r=cover&_filename=86768_Power BI_topbillede2000x2000.jpg"
+                  alt="Social Media Mobile App"
+                  class="w-full h-full object-cover transition-transform duration-300"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Visualization and Insights
+                  </h3>
+                  <div class="flex space-x-2">
+
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  A comprehensive data visualization project using Power BI,
+                  Interactive dashboards, and actionable insights for business
+                  decision-making.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span
+                    class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md"
+                    >Dax</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md"
+                    >Charts</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md"
+                    >Power Query</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="experience" class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="section-header text-3xl font-bold text-gray-900 mb-6 relative after:content-[''] after:block after:w-[60px] after:h-1 after:bg-indigo-600 after:mt-2 after:rounded-sm"
+        >
+          Internship Experience
+        </h2>
+
+        <p class="text-lg text-gray-600 max-w-3xl mb-12">
+          My professional journey through various roles where I've contributed,
+          learned, and grown as a mechanical engineering student.
+        </p>
+
+        <div class="max-w-4xl mx-auto">
+          <!-- Experience 1 -->
+          <div
+            class="mb-12 relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-px before:bg-indigo-200"
+          >
+            <div
+              class="absolute left-0 top-0 w-4 h-4 bg-indigo-600 rounded-full transform -translate-x-1/2 border-4 border-gray-50"
+            ></div>
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between mb-2"
+            >
+              <h3 class="text-xl font-semibold text-gray-900">
+                Initiation Internship at OCP Group | Safi
+              </h3>
+              <div class="flex items-center mt-2 md:mt-0">
+                <span
+                  class="bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0 hover:bg-indigo-200 transition-colors duration-300"
+                >
+                  07/07/2025 - Present
+                </span>
+              </div>
+            </div>
+            <div class="text-lg font-medium text-indigo-600 mb-3">
+              Safi, Morocco
+            </div>
+            <p class="text-gray-600 mb-4"></p>
+            <ul class="list-disc list-outside ml-5 text-gray-600 space-y-1">
+              <li>ba9i</li>
+              <li>ba9i</li>
+            </ul>
+          </div>
+
+          <!-- Experience 2 -->
+          <div
+            class="mb-12 relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-px before:bg-indigo-200"
+          >
+            <div
+              class="absolute left-0 top-0 w-4 h-4 bg-indigo-600 rounded-full transform -translate-x-1/2 border-4 border-gray-50"
+            ></div>
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between mb-2"
+            >
+              <h3 class="text-xl font-semibold text-gray-900">
+                PFE Internship at OCP Group | Safi
+              </h3>
+              <div class="flex items-center mt-2 md:mt-0">
+                <span
+                  class="bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0 hover:bg-indigo-200 transition-colors duration-300"
+                >
+                  04/14/2024 - 06/06/2024
+                </span>
+              </div>
+            </div>
+            <div class="text-lg font-medium text-indigo-600 mb-3">
+              Safi, Morocco
+            </div>
+            <p class="text-gray-600 mb-4">
+              Alignment of motors and pumps, and the study of the
+              characteristics of asynchronous motors and their applications in
+              industrial processes.
+            </p>
+            <ul class="list-disc list-outside ml-5 text-gray-600 space-y-1">
+              <li>
+                Couplings connect rotating shafts to transmit power, compensate
+                misalignments, and absorb shocks. Types include rigid, flexible,
+                gear, and bellows couplings for various applications.
+              </li>
+              <li>
+                Machine alignment ensures precise positioning of components like
+                shafts and motors, reducing vibration and improving efficiency.
+                Techniques such as laser alignment are widely used in industrial
+                applications.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Experience 3 -->
+          <div
+            class="mb-12 relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-px before:bg-indigo-200"
+          >
+            <div
+              class="absolute left-0 top-0 w-4 h-4 bg-indigo-600 rounded-full transform -translate-x-1/2 border-4 border-gray-50"
+            ></div>
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between mb-2"
+            >
+              <h3 class="text-xl font-semibold text-gray-900">
+                Initiation Internship at OCP Group | Safi
+              </h3>
+              <div class="flex items-center mt-2 md:mt-0">
+                <span
+                  class="bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0 hover:bg-indigo-200 transition-colors duration-300"
+                >
+                  08/01/2023 - 08/31/2023
+                </span>
+              </div>
+            </div>
+            <div class="text-lg font-medium text-indigo-600 mb-3">
+              Safi, Morocco
+            </div>
+            <p class="text-gray-600 mb-4"></p>
+            <ul class="list-disc list-outside ml-5 text-gray-600 space-y-1">
+              <li>
+                Learning asynchronus motors and their applications in industrial
+                processes
+              </li>
+              <li>
+                Observing the assembly lines and understanding the manufacturing
+                process of various products for the company for example
+                phosphorique acid and fertilizers
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Education Section-->
+        <div class="mt-16 max-w-4xl mx-auto">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Training</h3>
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <div class="p-6">
+              <div
+                class="flex flex-col sm:flex-row sm:items-start sm:justify-between"
+              >
+                <div class="flex items-center mb-4 sm:mb-0">
+                  <img
+                    src="images/logo-ocp.png"
+                    alt="OCP Logo"
+                    class="h-12 w-auto -ml-4 mr-2 hover:scale-105 transition-transform duration-300"
+                  />
+                  <h4 class="text-lg font-semibold text-gray-900">
+                    HSE Training – OCP Group
+                  </h4>
+                </div>
+                <div class="flex items-center mt-2 md:mt-0">
+                  <span
+                    class="bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0 hover:bg-indigo-200 transition-colors duration-300"
+                  >
+                    1 Week 2023
+                  </span>
+                </div>
+              </div>
+              <p class="text-gray-600 mt-4">
+                HSE training at OCP Group covering safety practices, risk
+                management, environmental protection, hazard identification, and
+                emergency procedures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="section-header text-3xl font-bold text-gray-900 mb-6 relative after:content-[''] after:block after:w-[60px] after:h-1 after:bg-indigo-600 after:mt-2 after:rounded-sm"
+        >
+          Education
+        </h2>
+
+        <p class="text-lg text-gray-600 max-w-3xl mb-12">
+          My educational journey and academic qualifications that have shaped my
+          expertise in mechanical engineering.
+        </p>
+
+        <div class="max-w-4xl mx-auto space-y-8">
+          <!-- Formation 1 -->
+          <div
+            class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4"
+            >
+              <h3 class="text-xl font-semibold text-gray-900">
+                Mechanical Engineering Student
+              </h3>
+              <span
+                class="bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0"
+                >2024 - Present</span
+              >
+            </div>
+            <p class="text-gray-700 mb-2">
+              National School of Applied Sciences (ENSA-FES)
+            </p>
+            <p class="text-gray-600">
+              Specializing in mechanical design, manufacturing processes, and
+              industrial automation.
+            </p>
+          </div>
+
+          <!-- Formation 2 -->
+          <div
+            class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4"
+            >
+              <h3 class="text-xl font-semibold text-gray-900">
+                DUT in Industrial Engineering and Maintenance
+              </h3>
+              <span
+                class="bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0"
+                >2022 - 2024</span
+              >
+            </div>
+            <p class="text-gray-700 mb-2">
+              Higher School of Technology (EST Safi)
+            </p>
+            <p class="text-gray-600">
+              Focus on industrial maintenance, automation, and production
+              systems optimization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="section-header text-3xl font-bold text-gray-900 mb-6 relative after:content-[''] after:block after:w-[60px] after:h-1 after:bg-indigo-600 after:mt-2 after:rounded-sm"
+        >
+          Skills & Expertise
+        </h2>
+
+        <p class="text-lg text-gray-600 max-w-3xl mb-12">
+          A comprehensive overview of my technical skills, tools, and areas of
+          expertise in web development.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <!-- Frontend Skills -->
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">CAD/CAM</h3>
+
+            <div class="space-y-5">
+              <!-- Skill 1 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium">Catia V5</span>
+                  <span class="text-gray-500 text-sm">90%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-indigo-500"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium">Solidworks</span>
+                  <span class="text-gray-500 text-sm">85%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-indigo-500"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium">Autocad</span>
+                  <span class="text-gray-500 text-sm">90%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-indigo-500"
+                    style="width: 98%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium"
+                    >Microsoft Office</span
+                  >
+                  <span class="text-gray-500 text-sm">96%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-indigo-500"
+                    style="width: 92%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 5 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium">Latex</span>
+                  <span class="text-gray-500 text-sm">85%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-indigo-500"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Skills -->
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">
+              Other Skills
+            </h3>
+
+            <div class="space-y-5">
+              <!-- Skill 1 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium">Arduino</span>
+                  <span class="text-gray-500 text-sm">80%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-purple-500"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium">Matlab</span>
+                  <span class="text-gray-500 text-sm">75%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-purple-500"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium">Protheus 8 Pro</span>
+                  <span class="text-gray-500 text-sm">80%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-purple-500"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium">HTML/CSS</span>
+                  <span class="text-gray-500 text-sm">85%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-purple-500"
+                    style="width: 82%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Skill 5 -->
+              <div class="mb-5">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 font-medium">C</span>
+                  <span class="text-gray-500 text-sm">75%</span>
+                </div>
+                <div
+                  class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="h-full rounded-full bg-purple-500"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 max-w-5xl mx-auto">
+          <h3 class="text-xl font-semibold text-gray-900 mb-6">
+            Tools & Technologies
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >VS Code</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Ansys</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Solidworks</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Catia V5</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Microsoft Office</span
+            >
+            <span
+            class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+            >Gmao</span
+            >
+            <span
+            class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+            >Adobe</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Arduino</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >C</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Matlab</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Python</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Protheus 8 Pro</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Power Bi</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Latex</span
+            >
+            <span
+              class="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >Autocad</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="section-header text-3xl font-bold text-gray-900 mb-6 relative after:content-[''] after:block after:w-[60px] after:h-1 after:bg-indigo-600 after:mt-2 after:rounded-sm"
+        >
+          Certificates
+        </h2>
+
+        <p class="text-lg text-gray-600 max-w-3xl mb-12">
+          A collection of my professional certifications and completed courses
+          that demonstrate my commitment to continuous learning and professional
+          development.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <!-- Certificate 1 -->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Optimization Onramp
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: MathWorks Inc.</p>
+                <p class="text-gray-500 text-sm">Completed: April 2025</p>
+                <a
+                  href="certificates/optimization.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Control Design Onramp with Simulink
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: MathWorks Inc.</p>
+                <p class="text-gray-500 text-sm">Completed: April 2025</p>
+                <a
+                  href="certificates/Control Design Onramp with Simulink.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Matlab Onramp
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: MathWorks Inc.</p>
+                <p class="text-gray-500 text-sm">Completed: April 2025</p>
+                <a
+                  href="certificates/MATLAB Onramp.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 4 -->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Object Oriented Programming Onramp
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: MathWorks Inc.</p>
+                <p class="text-gray-500 text-sm">Completed: April 2025</p>
+                <a
+                  href="certificates/POO.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate 5 -->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Machine Learning Onramp
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: MathWorks Inc.</p>
+                <p class="text-gray-500 text-sm">Completed: April 2025</p>
+                <a
+                  href="certificates/certificate_Machine learning.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate 6 -->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Simulink Onramp
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: MathWorks Inc.</p>
+                <p class="text-gray-500 text-sm">Completed: April 2025</p>
+                <a
+                  href="certificates/certificate_Simulink.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate 7 -->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  ISO 9001
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: Udemy Inc.</p>
+                <p class="text-gray-500 text-sm">Completed: May 2025</p>
+                <a
+                  href="certificates/iso9001.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate 8 -->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Lean Six Sigma : Yellow Belt
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: Udemy Inc.</p>
+                <p class="text-gray-500 text-sm">Completed: May 2025</p>
+                <a
+                  href="certificates/yellow belt.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate 9 -->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Project Management Foundations
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: Linkedin Inc.</p>
+                <p class="text-gray-500 text-sm">Completed: May 2025</p>
+                <a
+                  href="certificates/Project Management Foundations.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Certification 10-->
+          <div
+            class="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-indigo-600 text-2xl mr-4">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                  Catia V5
+                </h3>
+                <p class="text-gray-600 mb-2">Issued by: Dassault Systems.</p>
+                <p class="text-gray-500 text-sm">Completed: July 2025</p>
+                <a
+                  href="certificates/catia-certificate.pdf"
+                  target="_blank"
+                  class="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-3 inline-flex items-center"
+                >
+                  View Certificate
+                  <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="section-header text-3xl font-bold text-gray-900 mb-6 relative after:content-[''] after:block after:w-[60px] after:h-1 after:bg-indigo-600 after:mt-2 after:rounded-sm"
+          >
+            Get In Touch
+          </h2>
+
+          <p class="text-lg text-gray-600 max-w-3xl mb-12">
+            Have a question or want to work together? Feel free to reach out
+            through the form below or directly via email or phone.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2">
+              <form
+                id="contact-form"
+                class="space-y-6"
+                onsubmit="sendEmail(event)"
+              >
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div class="space-y-2">
+                    <label
+                      for="name"
+                      class="block text-sm font-medium text-gray-700"
+                      >Name</label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Your name"
+                      class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                      required
+                    />
+                  </div>
+                  <div class="space-y-2">
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-gray-700"
+                      >Email</label
+                    >
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      placeholder="Your email"
+                      class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    for="subject"
+                    class="block text-sm font-medium text-gray-700"
+                    >Subject</label
+                  >
+                  <input
+                    id="subject"
+                    type="text"
+                    name="subject"
+                    placeholder="Subject of your message"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                    required
+                  />
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Your message"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-md transition w-full sm:w-auto"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <div>
+              <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-6">
+                  Contact Information
+                </h3>
+                <div class="space-y-4">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1 text-indigo-600">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="ml-4">
+                      <p class="text-sm font-medium text-gray-700">Email</p>
+                      <a
+                        href="mailto:arkhismhamed@gmail.com"
+                        class="text-gray-900 hover:text-indigo-600 transition-colors"
+                      >
+                        arkhismhamed@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1 text-indigo-600">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="ml-4">
+                      <p class="text-sm font-medium text-gray-700">Phone</p>
+                      <a
+                        href="tel:+212623454914"
+                        class="text-gray-900 hover:text-indigo-600 transition-colors"
+                      >
+                        0623454914
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1 text-indigo-600">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="ml-4">
+                      <p class="text-sm font-medium text-gray-700">Location</p>
+                      <p class="text-gray-900">Safi , Morocco</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-8">
+                  <h4 class="text-sm font-medium text-gray-700 mb-3">
+                    Follow Me
+                  </h4>
+                  <div class="flex space-x-4">
+                    <a
+                      href="https://github.com/Arkspace659"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-600 hover:text-indigo-600 transition-colors"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/mhammed-arkhis/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-600 hover:text-indigo-600 transition-colors"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://x.com/MhamedArkh25571"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-600 hover:text-indigo-600 transition-colors"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=%2B212623454914&text&type=phone_number&app_absent=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-600 hover:text-indigo-600 transition-colors"
+                    >
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="fixed bottom-0 left-0 right-0 w-full h-[50vh] -z-10 overflow-hidden">
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[100vh] h-[100vh] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full opacity-10 blur-3xl"></div>
+    </div></div>
+    <style>
+      @media (max-width: 768px) {
+        footer .container {
+          text-align: center;
+        }
+        
+        footer .grid {
+          justify-items: center;
+        }
+
+        footer .flex {
+          justify-content: center;
+        }
+
+        footer nav.grid {
+          justify-items: center;
+          grid-template-columns: 1fr;
+        }
+
+        footer .space-x-4 {
+          justify-content: center;
+        }
+      }
+    </style>
+    <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          <!-- Top Footer Section -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <!-- Brand Section -->
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                <img
+                  src="images/design-a-unique-and-bold-logo-for-a-male_fJudMwEfRsiqagPYAlCQuQ_ymE1LvJyTwGbs-bKiPAD_g__1_-removebg-preview.png"
+                  alt="Arkhis Logo"
+                  class="h-12 w-auto rounded-lg"
+                />
+                <div>
+                  <h3 class="text-xl font-bold">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-blue-500">
+                      Arkhis
+                    </span>
+                    M'hammed
+                  </h3>
+                  <p class="text-gray-400 text-sm">Mechanical Engineering Student</p>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm">
+                Passionate about mechanical engineering, robotics, and automation.
+              </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h4 class="text-lg font-semibold mb-4 text-gray-200">Quick Links</h4>
+              <nav class="grid grid-cols-2 gap-2">
+                <a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a>
+                <a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a>
+                <a href="#projects" class="text-gray-400 hover:text-white transition-colors duration-300">Projects</a>
+                <a href="#experience" class="text-gray-400 hover:text-white transition-colors duration-300">Experience</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-300">Skills</a>
+                <a href="#certificates" class="text-gray-400 hover:text-white transition-colors duration-300">Certificates</a>
+              </nav>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+              <h4 class="text-lg font-semibold mb-4 text-gray-200">Contact</h4>
+              <div class="space-y-3">
+                <p class="text-gray-400 flex items-center space-x-2">
+                  <i class="fas fa-envelope text-indigo-400"></i>
+                  <a href="mailto:arkhismhamed@gmail.com" class="hover:text-white transition-colors duration-300">arkhismhamed@gmail.com</a>
+                </p>
+                <p class="text-gray-400 flex items-center space-x-2">
+                  <i class="fas fa-phone text-indigo-400"></i>
+                  <a href="tel:+212623454914" class="hover:text-white transition-colors duration-300">+212 623-454914</a>
+                </p>
+                <p class="text-gray-400 flex items-center space-x-2">
+                  <i class="fas fa-map-marker-alt text-indigo-400"></i>
+                  <span>Safi, Morocco</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div>
+              <h4 class="text-lg font-semibold mb-4 text-gray-200">Connect</h4>
+              <div class="flex space-x-4">
+                <a href="https://github.com/Arkspace659" target="_blank" rel="noopener noreferrer"
+                  class="bg-gray-700 p-3 rounded-full hover:bg-indigo-600 transition-colors duration-300">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mhammed-arkhis/" target="_blank" rel="noopener noreferrer"
+                  class="bg-gray-700 p-3 rounded-full hover:bg-blue-600 transition-colors duration-300">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://x.com/MhamedArkh25571" target="_blank" rel="noopener noreferrer"
+                  class="bg-gray-700 p-3 rounded-full hover:bg-blue-400 transition-colors duration-300">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B212623454914" target="_blank" rel="noopener noreferrer"
+                  class="bg-gray-700 p-3 rounded-full hover:bg-green-600 transition-colors duration-300">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Footer -->
+            <div class="border-t border-gray-700 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <p class="text-gray-400 text-sm hover:text-white transition-colors duration-300">
+              &copy; <span id="current-year"></span> Arkhis M'hammed | All rights reserved.
+              </p>
+              <p class="text-gray-400 text-sm flex items-center space-x-2 hover:text-white transition-colors duration-300">
+              <span>Crafted with</span>
+              <i class="fas fa-heart text-red-500 animate-pulse"></i>
+              <span>by Arkhis M'hammed</span>
+              </p>
+            </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

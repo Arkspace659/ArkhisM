@@ -1,0 +1,1327 @@
+/* Custom CSS for Portfolio Website */
+
+/* Root variables for light mode */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #fbfbf9;
+  --text-primary: #000000;
+  --text-secondary: #4b5563;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --border: #e5e7eb;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Wave divider styles */
+.wave-divider {
+  position: relative;
+  height: 100px;
+  background: var(--bg-secondary);
+  overflow: hidden;
+}
+
+.wave-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #4f46e5 0%, #4f46e5 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.dark .wave-divider {
+  background: var(--gradient-bg) !important;
+}
+
+.dark .wave-divider::before {
+  background: linear-gradient(135deg, #50b8ca 0%, #00ccff 100%);
+  box-shadow: 0 0 30px rgba(0, 204, 255, 0.4);
+}
+
+.dark .wave-divider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    circle at center,
+    var(--accent) 0%,
+    transparent 8%
+  );
+  background-position: 0 0;
+  background-size: 50px 50px;
+  animation: glowingDots 4s linear infinite;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dark #home .btn-get-in-touch {
+  background-color: var(--accent);
+  color: white;
+  border: 2px solid var(--accent);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(99, 102, 241, 0.2);
+}
+
+.dark #home .btn-get-in-touch:hover {
+  background-color: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(99, 102, 241, 0.3);
+}
+
+.dark #home h1 span.text-indigo-600 {
+  color: var(--accent);
+  background: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    var(--accent-hover) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
+
+/* Prevent unwanted movements in home section */
+#home {
+  transform: none !important;
+  transition: none !important;
+  border-radius: 0 !important; /* Remove rounded corners */
+  border: none !important; /* Remove border */
+  outline: none !important; /* Remove outline */
+  -webkit-user-select: none; /* Prevent text selection highlighting */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#home::before,
+#home::after {
+  border-radius: 0 !important; /* Remove rounded corners from any pseudo-elements */
+}
+
+#home h1,
+#home p,
+#home div {
+  transform: none;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform-style: preserve-3d;
+}
+
+/* Home section button styles */
+#home .btn-get-in-touch,
+#home a[href="#projects"] {
+  border-radius: 0.75rem !important; /* Increased from 0.375rem to 0.75rem (12px) */
+}
+
+.dark #home .btn-get-in-touch,
+.dark #home a[href="#projects"] {
+  border-radius: 0.75rem !important; /* Match the light mode radius */
+}
+
+/* Override any other border-radius styles for these buttons */
+#home .bg-indigo-600,
+#home .border-gray-300,
+.dark #home .bg-indigo-600,
+.dark #home .border-gray-300 {
+  border-radius: 0.75rem !important;
+}
+
+/* Universal button styles */
+button,
+.btn-get-in-touch,
+a[href="#projects"],
+a[href="#contact"],
+.download-resume,
+button[type="submit"],
+.bg-indigo-600 {
+  border-radius: 0.75rem !important;
+}
+
+/* Override any existing button radius styles */
+.dark button,
+.dark .btn-get-in-touch,
+.dark a[href="#projects"],
+.dark a[href="#contact"],
+.dark .download-resume,
+.dark button[type="submit"],
+.dark .bg-indigo-600 {
+  border-radius: 0.75rem !important;
+}
+
+/* Remove conflicting border-radius styles */
+#home .btn-get-in-touch {
+  border-radius: 0.75rem !important;
+}
+
+.dark #home .btn-get-in-touch {
+  border-radius: 0.75rem !important;
+}
+
+.dark .btn-get-in-touch,
+.dark button[type="submit"],
+.dark .bg-indigo-600,
+.dark .download-resume {
+  border-radius: 0.75rem !important;
+}
+
+/* Dark mode section backgrounds */
+.dark section {
+  position: relative;
+  background: var(--gradient-bg) !important;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.dark section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(56, 189, 248, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.dark section:not(#home) {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 25, 47, 0.97) 0%,
+    rgba(17, 34, 64, 0.97) 100%
+  );
+}
+
+/* Glowing dots animation */
+.dark section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    circle at center,
+    var(--accent) 0%,
+    transparent 8%
+  );
+  background-position: 0 0;
+  background-size: 50px 50px;
+  animation: glowingDots 4s linear infinite;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes glowingDots {
+  0% {
+    background-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    background-position: 25px 25px;
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    background-position: 50px 50px;
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Ensure content stays above the dots */
+.dark section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Additional glowing effect for specific sections */
+.dark #home::before,
+.dark #projects::before,
+.dark #contact::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: var(--accent);
+  filter: blur(90px);
+  opacity: 0.2;
+  animation: glow 4s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+.dark #home::before {
+  top: 20%;
+  left: 20%;
+  border-radius: 0; /* Remove rounded corners from the glow effect */
+}
+
+.dark #projects::before {
+  bottom: 20%;
+  right: 20%;
+}
+
+.dark #contact::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes glow {
+  0% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}
+
+/* Sophisticated dark mode variables */
+.dark {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
+  --border: #334155;
+  --shadow: rgba(2, 6, 23, 0.8);
+  --gradient-bg: linear-gradient(
+    rgba(24, 44, 101, 0.95) 0%,
+    rgba(20, 35, 70, 0.95) 30%,
+    rgba(15, 30, 60, 0.95) 70%,
+    rgba(28, 80, 176, 0.95) 100%
+  );
+}
+
+/* Dark mode card backgrounds */
+.dark .bg-white {
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.dark .bg-gray-50 {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+/* Dark mode project cards */
+.dark .project-card {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid var(--border);
+}
+
+.dark .project-card:hover {
+  background: rgba(51, 65, 85, 0.8);
+  border-color: var(--accent);
+}
+
+/* Dark mode form inputs */
+.dark input,
+.dark textarea {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: var(--border);
+}
+
+/* Dark mode footer */
+.dark footer {
+  background: rgba(15, 23, 42, 0.9);
+  border-top: 1px solid var(--border);
+}
+
+/* Animated nav items */
+header nav a {
+  position: relative;
+  transition: color 0.3s ease;
+  animation: navItemFadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+header nav a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+header nav a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+header nav a:nth-child(3) {
+  animation-delay: 0.3s;
+}
+header nav a:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes navItemFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced header hover effects */
+header nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+header nav a:hover::before {
+  width: 100%;
+}
+
+/* Glowing effect for active nav item */
+header nav a.active {
+  position: relative;
+  color: var(--accent);
+}
+
+header nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent), 0 0 12px var(--accent);
+  animation: glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Dark mode skill bars background */
+.dark .bg-gray-100 {
+  background: rgba(30, 41, 59, 0.8);
+}
+
+/* Dark mode certificate backgrounds */
+.dark .bg-gray-50 {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: var(--border);
+}
+
+/* Dark mode card hover effects */
+.dark .project-card:hover {
+  background: rgba(51, 65, 85, 0.8);
+  border-color: #6366f1;
+}
+
+/* Dark mode text highlights */
+.dark .text-indigo-600 {
+  background: linear-gradient(45deg, #6366f1, #818cf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Dark mode shadows */
+.dark .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode transitions */
+.dark * {
+  transition: all 0.3s ease;
+}
+
+/* Home section specific dark mode styles */
+.dark #home {
+  --text-primary: #6366f1;
+  --text-secondary: #6366f1;
+  border-radius: 0; /* Remove rounded corners */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+}
+
+.dark #home h1 span.text-indigo-600 {
+  background: #0004db;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#home h1 span.text-indigo-600 {
+  background: linear-gradient(45deg, #4f46e5, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(12, 0, 246, 0.2);
+}
+
+.dark #home h1,
+.dark #home p,
+.dark #home a,
+.dark #home .text-gray-600,
+.dark #home .text-gray-700,
+.dark #home .text-gray-900 {
+  color: #000000;
+}
+
+.dark #home .bg-indigo-600 {
+  background-color: #6366f1;
+}
+
+.dark #home .hover\:bg-indigo-700:hover {
+  background-color: #4338ca;
+}
+
+.dark #home .border-gray-300 {
+  border-color: #000000;
+}
+
+#home .btn-get-in-touch {
+  background-color: var(--accent);
+  color: #ffffff;
+  border-radius: 9999px;
+}
+
+#home .btn-get-in-touch:hover {
+  background-color: var(--accent-hover);
+  color: #ffffff;
+}
+
+.dark #home .btn-get-in-touch {
+  background-color: #6366f1; /* Dark mode accent */
+  color: #ffffff;
+}
+
+.dark #home * {
+  /* Prevent text selection highlighting */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.text-black {
+  color: var(--text-primary);
+}
+
+/* Background color overrides */
+.bg-white {
+  background-color: var(--bg-primary);
+}
+
+.bg-gray-50 {
+  background-color: var(--bg-secondary);
+}
+
+/* Dark mode specific styles */
+.dark .bg-white {
+  background-color: var(--bg-secondary);
+}
+
+.dark .bg-gray-50 {
+  background-color: var(--bg-primary);
+}
+
+.dark .text-gray-900,
+.dark .text-gray-800,
+.dark .text-gray-700,
+.dark .text-gray-600,
+.dark .text-gray-500,
+.dark .text-gray-400,
+.dark .text-gray-300,
+.dark .text-black {
+  color: var(--text-primary);
+}
+
+/* Sophisticated dark mode accents */
+.dark .text-indigo-600 {
+  color: #818cf8;
+}
+
+.dark .bg-indigo-600 {
+  background-color: #6366f1;
+}
+
+.dark .hover\:bg-indigo-700:hover {
+  background-color: #818cf8;
+}
+
+.dark .border-gray-300 {
+  border-color: #2d2d2d;
+}
+
+.dark .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Project cards dark mode styles */
+.dark .project-card {
+  background-color: #1a1a1a;
+  border: 0.5px solid #2d2d2d;
+  border-radius: 10px;
+}
+
+.dark .project-card:hover {
+  background-color: #242424;
+  border-color: #2648cf;
+}
+
+.dark .project-card h3 {
+  color: #f8f9fa;
+}
+
+.dark .project-card p {
+  color: #adb5bd;
+}
+
+/* Skills section dark mode styles */
+.dark .skill-bar-fill {
+  background-color: #6366f1;
+}
+
+.dark .bg-gray-100 {
+  background-color: #242424;
+}
+
+/* Section headers in dark mode */
+.dark .section-header::after {
+  background-color: #6366f1;
+}
+
+/* Contact form dark mode styles */
+.dark input,
+.dark textarea {
+  background-color: #1a1a1a;
+  border-color: #2d2d2d;
+  color: #f8f9fa;
+}
+
+.dark input:focus,
+.dark textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Footer styles */
+footer {
+  background-color: #1a1a1a;
+  border-top: 1px solid #2d2d2d;
+  position: relative;
+  overflow: hidden;
+}
+
+footer,
+footer p,
+footer span,
+footer div,
+footer a,
+footer h3,
+footer nav a,
+footer .text-gray-400 {
+  color: #ffffff !important;
+}
+
+footer .text-gray-400 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+footer a:hover,
+footer nav a:hover {
+  color: #818cf8 !important;
+}
+
+/* Footer dark mode styles */
+.dark footer {
+  background-color: var(--bg-primary);
+  border-top: 1px solid #2d2d2d;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark footer a {
+  color: #adb5bd;
+}
+
+.dark footer a:hover {
+  color: #818cf8;
+}
+
+/* Footer gradient effect */
+footer::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 65%);
+  bottom: -300px; /* Position half below the footer */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.3;
+  filter: blur(100px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.dark footer::before {
+  opacity: 0.15;
+  filter: blur(120px);
+}
+
+/* Ensure footer content is above the gradient */
+footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+header,
+section,
+footer {
+  background-color: var(--bg-secondary);
+}
+
+.text-gray-600,
+.text-gray-700,
+.text-gray-900 {
+  color: var(--text-primary);
+}
+
+.bg-white,
+.bg-gray-50,
+.bg-gray-100 {
+  background-color: var(--bg-secondary);
+}
+
+.border-gray-300 {
+  border-color: var(--border);
+}
+
+.shadow-sm,
+.shadow-md,
+.shadow-lg {
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.text-indigo-600,
+.hover\:text-indigo-600:hover {
+  color: var(--accent);
+}
+
+.bg-indigo-600,
+.hover\:bg-indigo-700:hover {
+  background-color: var(--accent);
+}
+
+.hover\:bg-indigo-700:hover {
+  background-color: var(--accent-hover);
+}
+
+.hover\:border-indigo-500:hover {
+  border-color: var(--accent);
+}
+
+/* Enhanced text animations */
+.text-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: textFadeIn 0.8s ease-out forwards;
+}
+
+.text-animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.text-animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.text-animate-delay-600 {
+  animation-delay: 0.6s;
+}
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: background-color 0.5s ease, color 0.5s ease,
+    border-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.animate-fade-in-delay-200 {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.animate-fade-in-delay-400 {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.animate-fade-in-delay-600 {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide animations */
+/* Initially hide elements that will slide in */
+.slide-in-left,
+.slide-in-right {
+  opacity: 0;
+}
+
+/* Trigger animation only when inside a visible section */
+section.visible .slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+section.visible .slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header animations and transitions */
+header {
+  position: static;
+  z-index: 1000;
+  transition: all 1s ease;
+  background-color: var(--bg-secondary);
+  box-shadow: var(--shadow);
+}
+
+/* Dark mode header transitions */
+.dark header {
+  background: linear-gradient(
+    -90deg,
+    #0e2148 0%,
+    #1e3a6d 100%
+  ) !important; /* Dark gradient background */
+  backdrop-filter: blur(5px); /* Add a slight blur for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Header nav links transition */
+header nav a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.5s ease;
+}
+
+/* Dark mode nav hover effects */
+.dark header nav a::after {
+  background-color: #00ffff; /* Cyan color */
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+
+.dark header nav a.active::after {
+  background-color: #00ffff;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+/* Remove scroll-up/down transform rules */
+/* header.scroll-up { */
+/*   transform: translateY(0); */
+/* } */
+
+/* header.scroll-down { */
+/*   transform: translateY(-100%); */
+/* } */
+
+/* Custom colors */
+.bg-primary-50 {
+  background-color: #f0f7ff;
+}
+
+.bg-primary-100 {
+  background-color: #e0f0ff;
+}
+
+.text-indigo-400 {
+  color: #818cf8;
+}
+
+.text-indigo-600 {
+  color: #4f46e5;
+}
+
+.bg-indigo-600 {
+  background-color: #4f46e5;
+}
+
+.hover\:bg-indigo-700:hover {
+  background-color: #4338ca;
+}
+
+.text-indigo-500 {
+  color: #6366f1;
+}
+
+.bg-indigo-500 {
+  background-color: #6366f1;
+}
+
+.bg-purple-500 {
+  background-color: #8b5cf6;
+}
+
+/* Active nav link */
+header nav a.active {
+  color: #4f46e5;
+  font-weight: 500;
+  position: relative;
+}
+
+header nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #4f46e5;
+  border-radius: 1px;
+}
+
+/* Section transitions */
+section {
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Hover effects */
+.transition {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.hover\:-translate-y-1:hover {
+  transform: translateY(-4px);
+}
+
+/* Page transition animation */
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4f46e5;
+  z-index: 9999;
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+.page-transition.active {
+  animation: pageTransition 0.6s ease-in-out forwards;
+}
+
+@keyframes pageTransition {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* Timeline styling for experience section */
+.before\:content-\[\'\'\]:before {
+  content: "";
+}
+
+.before\:absolute:before {
+  position: absolute;
+}
+
+.before\:left-0:before {
+  left: 0;
+}
+
+.before\:top-0:before {
+  top: 0;
+}
+
+.before\:bottom-0:before {
+  bottom: 0;
+}
+
+.before\:w-px:before {
+  width: 1px;
+}
+
+.before\:bg-indigo-200:before {
+  background-color: #c7d2fe;
+}
+
+/* Fix for some sizing issues */
+.container {
+  max-width: 1280px;
+}
+
+/* Custom section headers with decorative line */
+.section-header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #4f46e5;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.section-header:hover::after {
+  width: 80px;
+}
+
+/* Contact form styling */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Form input animations */
+input,
+textarea {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  transform: translateY(-2px);
+}
+
+/* Custom focus styles */
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-indigo-500:focus {
+  --tw-ring-color: #6366f1;
+}
+
+.focus\:border-indigo-500:focus {
+  border-color: #6366f1;
+}
+
+/* Skill bars animation */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--percent);
+  }
+}
+
+.skill-bar-fill {
+  animation: fillBar 1.5s ease-out forwards;
+}
+
+/* Project card hover effects */
+.project-card {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.project-card .project-image {
+  transition: transform 0.7s ease;
+  overflow: hidden;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .section-header {
+    text-align: center;
+  }
+
+  .section-header::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust animations for mobile */
+  .animate-fade-in,
+  .animate-fade-in-delay-200,
+  .animate-fade-in-delay-400,
+  .animate-fade-in-delay-600 {
+    animation-duration: 0.4s;
+  }
+}
+
+/* Dark mode toggle rotation animation */
+.rotate {
+  animation: rotate 0.8s ease;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translateZ(0);
+  }
+  100% {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+
+/* Dark mode text color overrides */
+.dark .text-gray-900,
+.dark .text-gray-800,
+.dark .text-gray-700,
+.dark .text-gray-600,
+.dark .text-gray-500,
+.dark .text-gray-400,
+.dark .text-gray-300,
+.dark .text-black {
+  color: var(--text-primary);
+}
+
+.dark .text-gray-600 {
+  color: var(--text-secondary);
+}
+
+.dark p {
+  color: var(--text-secondary);
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: var(--text-primary);
+}
+
+/* Dark mode link colors */
+.dark a {
+  color: var(--text-primary);
+}
+
+.dark a:hover {
+  color: var(--accent);
+}
+
+/* Dark mode footer text */
+.dark footer,
+.dark footer p,
+.dark footer span,
+.dark footer div,
+.dark footer a,
+.dark footer h3,
+.dark footer nav a,
+.dark footer .text-gray-400 {
+  color: var(--text-secondary) !important;
+}
+
+.dark footer a:hover,
+.dark footer nav a:hover {
+  color: var(--accent) !important;
+}
+
+/* Dark mode form labels */
+.dark label {
+  color: var(--text-secondary);
+}
+
+/* Dark mode project card text */
+.dark .project-card h3 {
+  color: var(--text-primary);
+}
+
+.dark .project-card p {
+  color: var(--text-secondary);
+}
+
+/* Dark mode certificate text */
+.dark .bg-gray-50 h3 {
+  color: var(--text-primary);
+}
+
+.dark .bg-gray-50 p {
+  color: var(--text-secondary);
+}
+
+/* Dark mode button styles */
+.dark .btn-get-in-touch,
+.dark button[type="submit"],
+.dark .bg-indigo-600,
+.dark .download-resume {
+  background: linear-gradient(135deg, #50b8ca 0%, #00ccff 100%);
+  border: none;
+  color: rgb(255, 255, 255) !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.3), 0 0 40px rgba(0, 204, 255, 0.1);
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.dark .btn-get-in-touch:hover,
+.dark button[type="submit"]:hover,
+.dark .bg-indigo-600:hover,
+.dark .download-resume:hover {
+  background: linear-gradient(135deg, #00ccff 0%, #50b8ca 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 204, 255, 0.4), 0 0 50px rgba(0, 204, 255, 0.2);
+  opacity: 1 !important;
+}
+
+.dark .btn-get-in-touch:active,
+.dark button[type="submit"]:active,
+.dark .bg-indigo-600:active,
+.dark .download-resume:active {
+  background: linear-gradient(135deg, #50b8ca 0%, #00ccff 100%);
+  transform: translateY(1px);
+  box-shadow: 0 0 30px rgba(0, 204, 255, 0.5);
+  opacity: 1 !important;
+}
+
+/* Responsive adjustments for the training section */
+@media (max-width: 640px) {
+  .sm\:flex-row {
+    flex-direction: column;
+  }
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+  .sm\:ml-4 {
+    margin-left: 1rem;
+  }
+  .sm\:mb-0 {
+    margin-bottom: 0;
+  }
+}
